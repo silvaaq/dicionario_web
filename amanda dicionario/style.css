@@ -1,0 +1,237 @@
+:root {
+  --background-color: #f0f0f0;
+  --text-color: #000;
+  --input-background: #fff;
+  --input-text-color: #000;
+  --button-background: #007BFF;
+  --button-text-color: #fff;
+  --button-hover-background: #0056b3;
+  --font-background-color: #2196F3
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--input-background);
+}
+
+#container {
+  background: var(--input-background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+#container__inputtxt {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: var(--input-background);
+  color: var(--input-text-color);
+}
+
+#container__btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#container__btn:hover {
+  background-color: var(--button-hover-background);
+}
+
+#container__result {
+  margin-top: 20px;
+}
+
+#container__palavra {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#container__significado {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --input-background: #1e1e1e;
+  --input-text-color: #e0e0e0;
+  --button-background: #333;
+  --button-text-color: #e0e0e0;
+  --button-hover-background: #444;
+}
+
+#toggleButton {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+#noDefinitions {
+  text-align: center;
+  margin-top: 50px;
+ 
+}
+
+#noDefinitions img {
+  width: 50px;
+  height: 50px;
+  
+}
+
+#noDefinitions p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+
+}
+#noDefinitions {
+  text-align: center;
+  margin-top: 50px;
+ 
+}
+.red-text {
+  color: red;
+}
+
+#fontSelect{
+  border-radius: 20px;
+  color: black;
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+ 
+}
+
+.logo img {
+  max-width: 200px; /* Ajuste conforme necessário */
+  margin-top: 20px;
+ margin-left: 330px;
+}
+/* Estilos para o ícone de lupa na barra de pesquisa */
+#container__input {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px; /* Ajuste conforme necessário */
+}
+
+.search-icon {
+  position:relative;
+  top: 50%;
+  right: 10px; /* Ajuste a posição conforme necessário */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888; /* Cor do ícone */
+}
+
+.search-icon i {
+  font-size: 16px; /* Tamanho do ícone */
+  
+  
+}
+
+#container__inputtxt {
+  padding-right: 30px; /* Espaço para o ícone */
+  width: calc(100% - 40px); /* Ajuste para o tamanho total da barra de pesquisa */
+  
+}
+
+#container__inputtxt{
+  background-image: url(./assets/icons/iconoir_search.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Ajuste conforme necessário */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-position: right 10px center; /* Ajuste conforme necessário */
+  background-size: 20px 20px; /* Ajuste conforme necessário */
+  cursor: pointer;
+}
+
+  
+  
